@@ -35,7 +35,7 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "postgresql+asyncpg://postgres:password@localhost/config_db"
+
 
 # Create both async and sync engines
 async_engine = create_async_engine(DATABASE_URL, echo=True)
